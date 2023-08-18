@@ -1,0 +1,179 @@
+<!-- Indica que al interprete de explorador wbe que es un documento HTML5-->
+<!DOCTYPE html>
+<!--etiqueta raíz (todo documento de html debe tenerlo) -->
+<html">
+<!--Para agregar características a la página web -->
+<head>
+    <!--Titulo de la pagina web--> 
+    <title>Murruga's</title>
+</head>
+<!-- contenido de la página web -->
+<body>
+    <!-- Los headings son títulos que dan contexto al texto sucesor-->
+    <!-- Títulos y subtítulos-->
+    <h1 id="titulo1">Mi primer heading</h1>
+    <h2 id="titulo2">Mi segundo heading</h2>
+    <h3 id="titulo3">Mi tercer heading</h3>
+    <h4 id="titulo4">Mi cuarto heading</h4>
+    <h5 id="titulo5">Mi quinto heading</h5>
+    <h6 id="titulo6">Mi sexto heading</h6>
+    <!-- separa secciones de la pagina web -->
+    <hr>
+    <p>Párrafo</p>
+    <p>Párrafo separado</p>
+    <!-- Para identificar un texto o una etiqueta dentro de otras etiquetas -->
+    <p> <span>Esta es una prueba para hacer un párrafo mas largo </span> </p>
+    <!-- salto de lineas-->
+    <br>
+    <p> <span style="color: blue;">Esta es una prueba para hacer un párrafo mas largo pero en <br> azul </span> </p> 
+    <!-- hipervínculo-->
+    <a href="https://www.google.cl">Ir a google</a>
+    <!-- Abre el hipervínculo en una nueva pestaña-->
+    <a target="_blank" href="https://www.google.cl">Ir a google</a>
+    <!--<img> src="ruta de la imagen" />-->
+    <br>
+    <br>
+    <!-- para cambiar el ancho de la imagen-->
+    <img src="imagen.png " width ="400"/>
+    <br>
+    <br>
+    <!-- cambiar la altura de la imagen-->
+    <img src="img/imagen_en_carpeta.png" height="400"/>
+    <br>
+    <br>
+    <!-- GET O POST-->
+    <!-- acción y método para enviar los datos recopilados al servidor -->
+    </form action="/formulario" method="POST">
+        <!-- etiqueta para un campo de texto-->
+        <!-- selecciona el campo de texto en caso de dar click en la etiqueta-->
+        <!-- nota: Hay que colocar la misma clave en el for de la etiqueta y en el id del compo de texto input -->
+        <!-- value ="dar un valor por defecto al compo de texto"-->
+        <label for="nombre">Nombre</label>
+        <!-- in compo con información ingresada por teclado -->
+        <!-- Placeholder = para dar una descripción al compo de texto-->
+        <!-- type = "submit" "botón de submit que envía los datos al servidor"
+             type = "text" "campo de texto"
+             type = "radio" "circulo para seleccionar"
+             type = "checkbox" "cuadrado tipo lista para seleccionar"
+             type = "password" "oculta la contraseña dentro del campo con asteriscos"
+             type = "file" "Botón para seleccionar un archivo desde el sistema de archivo dispositivo"
+             type = "search"
+             nota: el type text viene por defecto -->
+        <!-- value ="dar un valor por defecto al compo de texto"-->
+        <input id="nombre" name="nombre" placeholder="Nombre"/>
+        <br>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input id="apellido" name="apellido" placeholder="Apellido" />
+        <br>
+        <br>
+        <label for="comentarios">Comentarios</label>
+        <textarea cols="50"  row="10" id=" comentarios" name="comentarios" placeholder="Ingrese comentario"></textarea>
+        <!-- <input type="submit" /> -->
+        <!-- button = botón con etiqueta personalizada -->
+        <!-- type="reset" "limpia los campos de texto por defecto"
+             type="menu"
+             type="botón" "se le da funciones con javascript" -->
+        <button type="">Enviar</button>
+    </form>
+    <hr>
+    <!-- ul = lista no ordenada-->
+    <ul>
+        <!-- item de lista-->
+        <li>
+            <a href="#titulo1">
+                
+                Titulo 1
+            </a> 
+        </li>
+        <li>
+            <a href="#titulo2">
+                
+                Titulo 2
+            </a> 
+        </li>
+        <li>
+            <a href="#titulo3">
+                
+                Titulo 3
+            </a> 
+        </li>
+        <li>
+            <a href="#titulo4">
+                
+                Titulo 4
+            </a> 
+        </li>
+        <li>
+            <a href="#titulo5">
+                
+                Titulo 5
+            </a> 
+        </li>
+        <li>
+            <a href="#titulo6">
+                
+                Titulo 6
+            </a> 
+        </li>
+        <br>
+    </ul>
+    <!-- ol = lista lista ordenada-->
+    <ol>
+        <li value="20">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    <!-- crear un sub elemento dentro de una lista-->
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub Elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub Elemento 2</li>
+                <li style="list-style-type: lower-roman;"> sub Elemento 3</li>
+                <li style="list-style-type: lower-roman;">sub Elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+    <!-- tabla -->
+    <!-- bordes de tabla -->
+    <!--<table style="border: 1px solid black;"> -->
+    <!-- forma de dar estilo a varias secciones de la página a la vez -->
+    <style>
+        table, tr, td {
+            border: 1px solid black;
+        }
+    </style>    
+    <!-- redimencionar el tamaño -->
+    <table style="width: 500px;">    
+        <!-- agrupa las filas de las cabeceras de tabla para que el navegador las identifique-->
+        <thead>
+            <!-- filas -->
+            <tr>
+                <!-- cabeceras-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- Agrupa todas las filas del cuerpo de la tabla para que el navegador las identifique-->
+        <tbody>
+            <tr>
+                <!-- elemento en celda -->
+                <td>Iphone 12</td>
+                <td>12.000.000</td>
+            </tr>
+            <tr>
+                <!-- elemento en celda -->
+                <td>Apple watch</td>
+                <td>15.000.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Total : 27.000.000</td>
+            </tr>
+        </tfoot>
+    </table>
+   
+</body>
+</html>
