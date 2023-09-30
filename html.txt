@@ -1,0 +1,463 @@
+#Nota: Como una buena práctica, los elemento y los atributos deben ir escritos en minúsculas. 
+
+
+
+-Elementos Heading o encabezados:
+
+#Nota: De mayor a menor tamaño.
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+
+-Elemento Párrafos:
+
+<p>This is a paragraph.</p>
+
+-Elemento Links:
+
+#web
+#Nota: El atributo "href", especifica la ruta de la pagina web.
+
+<a href="https://www.w3schools.com">This is a link</a>
+
+#Nota: "target="_blank"" Donde se abrirá la página. 
+
+#Nota: "_self" (por defecto),
+       "_blank" (en una nueva página),
+       "_parent" (en el marco principal),
+       "_top" (en el cuerpo completo de la ventana)
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+- URLS absolutas y relativas: 
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+- Dirección correo electrónico: 
+
+<a href="mailto:someone@example.com">Send email</a>
+
+- Botón como enlace:
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+- Títulos en enlaces: 
+
+#Nota: Se muestra al pasar el mouse por encima del elemento.
+
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+- Colores de enlaces: 
+
+<style>
+
+#Nota: Color del link no visitado.
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#Nota: Color del link visitado 
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#Nota: Color del link al pasar el mouse por encima.
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#Nota: Color al dar click o presionar el link.
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+- Botones de enlaces:
+
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+
+- Imágenes:
+
+#Nota: El atributo "src" archivo fuente,
+       El atributo "alt" texto alternativo(al no cargar la imagen),
+       El atributo "width" ancho de la imagen,
+       El atributo "height" altura de la imagen,
+       Ojo: Cuando se le quiera dar unas dimensiones a una imagen desde html no se colocan las unidades de medida.
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Imagen con el elemento estilo:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+<img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Imagen como enlace:
+
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Imágenes en otro directorio:
+
+<img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "float:right;" Hace flotar un elemento.
+
+#Nota: En este caso como el elemento de imagen esta dentro del elemento "<p>" y del elemento <strong> la imagen se situará al lado de estos.
+
+- Imagen flotante: 
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+The image will float to the left of the text.</p>
+
+- Elemento raíz:
+
+<html>
+
+- Elemento body:
+
+<body> </body>
+
+#Nota: El contenido dentro del elemento "<body>" es lo que ve el usuario en la página web. 
+
+- Elemento style:
+
+#Nota: "color:red;" Color de letra,
+
+<p style="color:red;">This is a red paragraph.</p>
+
+#Nota: El elemento "<style>" agrega estilos a un elemento.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "background-color:powderblue;" Color de fondo.
+
+<body>
+
+<h1 style="background-color:powderblue;">This is a heading</h1>
+
+</body>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: Color de letra.
+
+<h1 style="color:blue;">This is a heading</h1>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "border:2px solid Tomato;" Bode que rodea a un elemento,
+       "px" unidad de medida (pixel),
+       "solid" Tipo de bode,
+       "Tomato" Color de bode.
+
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "background-color:rgb(255, 99, 71);" Colores con escala rgb.
+
+#Nota: background-color:#ff6347;" Colores con escala hexadecimal.
+
+#Nota: "background-color:rgba(255, 99, 71, 0.5);" Colores con escala rgb con opacidad.
+
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "font-family:verdana;" Tipo de letra.
+
+<h1 style="font-family:verdana;">This is a heading</h1>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "font-size:300%;" Tamaño de letra.
+
+<h1 style="font-size:300%;">This is a heading</h1>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "text-align:center;" Alineación del texto. 
+
+<h1 style="text-align:center;">Centered Heading</h1>
+
+
+- Elemento title:
+
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+#Nota: El atributo "<title>" define información adicional sobre el elemento.
+
+#Nota>: Da información sobre el elemento al pasar el mouse sobre el.
+
+- Elemento Reglas horizontales:
+
+<hr>
+
+#Notas: Dibuja una linea horizontal.
+
+- Elemento de salto de linea: 
+
+<br>
+
+- Elemento pre:
+
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+
+#Nota: El elemento "<pre>" define un texto preformateados conservando las espacios
+como los saltos de lineas.
+
+- Elemento texto en negrita:
+
+<b>This text is bold</b>
+
+- Elemento texto con gran importancia:
+
+<strong>This text is important!</strong>
+
+- Elemento texto en cursiva:
+
+<i>This text is italic</i>
+
+#Nota: Se utiliza para indicar términos técnicos.
+
+- Elemento texto enfatizado: 
+
+<em>This text is emphasized</em>
+
+- Elemento texto pequeño: 
+
+<small>This is some smaller text.</small>
+
+- Elemento texto eliminado o tachado: 
+
+<p>My favorite color is <del>blue</del> red.</p>
+
+- Elemento texto insertado: 
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+- Elemento texto subíndice:
+
+<p>This is <sub>subscripted</sub> text.</p>
+
+- Elemento texto superíndice:
+
+<p>This is <sup>superscripted</sup> text.</p>
+
+- Elemento para citas:
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+#Nota: Define una sección de una cita de otra fuente. 
+
+- Elemento citas cortas con comillas:
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+- Elemento abreviaturas: 
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+- Elemento dirección:
+
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+#Nota: Para información de contacto.
+
+- Elemento titulo de trabajo: 
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+#Nota: Define el titulo de un trabajo, obra, libro entre otros. 
+
+- Elemento anulación bidireccional de texto:
+
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+#Nota: coloca al revés el texto.
+
+- Comentarios: 
+
+<!-- This is a comment -->
+
+<p>This is a paragraph.</p>
+
+<!-- Remember to add more information here -->
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- <p>This is another paragraph </p> -->
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+<p>This is a paragraph.</p>
+<!--
+<p>Look at this cool image:</p>
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
+<p>This is a paragraph too.</p>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+<p>This <!-- great text --> is a paragraph.</p>
+
+- CSS interno (dentro de HTML):
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+</body>
+</html>
+
+#Nota: Se pueden definir elementos de CSS dentro de HTML con el elemento <style>.
+
+#Nota: El CSS interno se define dentro del elemento "<head>".
+
+- CSS externo:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+</body>
+</html>
+
+#Nota: Así como el CSS interno, el externo de define en el elemento "<head>".
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+p {
+  border: 2px solid powderblue;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: padding: 30px; Espacio entre el texto y el borde.
+
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: margin: 50px; Fuera del borde. 
+
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+
+- Marcador o identificador de elemento: 
+
+#Nota: "id="C4"" Crea un identificador.
+
+#Nota: href="#C4" Hace referencia a un identificador. 
+
+<h2 id="C4">Chapter 4</h2>
+
+<a href="#C4">Jump to Chapter 4</a>
