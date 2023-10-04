@@ -1,8 +1,6 @@
 #Nota: Como una buena práctica, los elemento y los atributos deben ir escritos en minúsculas. 
 
-
-
--Elementos Heading o encabezados:
+- Etiqueta Heading o encabezados:
 
 #Nota: De mayor a menor tamaño.
 
@@ -12,12 +10,14 @@
 <h4>This is heading 4</h4>
 <h5>This is heading 5</h5>
 <h6>This is heading 6</h6>
+_________________________________________________________________________________________________________________________________________________
 
--Elemento Párrafos:
+-Etiqueta Párrafos:
 
 <p>This is a paragraph.</p>
+_________________________________________________________________________________________________________________________________________________
 
--Elemento Links:
+-Etiqueta Links:
 
 #web
 #Nota: El atributo "href", especifica la ruta de la pagina web.
@@ -32,6 +32,7 @@
        "_top" (en el cuerpo completo de la ventana)
 
 <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+_________________________________________________________________________________________________________________________________________________
 
 - URLS absolutas y relativas: 
 
@@ -42,20 +43,24 @@
 <h2>Relative URLs</h2>
 <p><a href="html_images.asp">HTML Images</a></p>
 <p><a href="/css/default.asp">CSS Tutorial</a></p>
+_________________________________________________________________________________________________________________________________________________
 
 - Dirección correo electrónico: 
 
 <a href="mailto:someone@example.com">Send email</a>
+_________________________________________________________________________________________________________________________________________________
 
 - Botón como enlace:
 
 <button onclick="document.location='default.asp'">HTML Tutorial</button>
+_________________________________________________________________________________________________________________________________________________
 
 - Títulos en enlaces: 
 
 #Nota: Se muestra al pasar el mouse por encima del elemento.
 
 <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+_________________________________________________________________________________________________________________________________________________
 
 - Colores de enlaces: 
 
@@ -106,7 +111,7 @@ a:hover, a:active {
   background-color: red;
 }
 </style>
-
+_________________________________________________________________________________________________________________________________________________
 
 - Imágenes:
 
@@ -117,9 +122,9 @@ a:hover, a:active {
        Ojo: Cuando se le quiera dar unas dimensiones a una imagen desde html no se colocan las unidades de medida.
 
 <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
--------------------------------------------------------------------------------------------------------------------------------------------------
+_________________________________________________________________________________________________________________________________________________
 
-- Imagen con el elemento estilo:
+- Imagen con la etiqueta estilo:
 
 <!DOCTYPE html>
 <html>
@@ -138,7 +143,7 @@ img {
 
 </body>
 </html>
--------------------------------------------------------------------------------------------------------------------------------------------------
+_________________________________________________________________________________________________________________________________________________
 
 - Imagen como enlace:
 
@@ -146,16 +151,16 @@ img {
 <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
 </a>
 
--------------------------------------------------------------------------------------------------------------------------------------------------
+_________________________________________________________________________________________________________________________________________________
 
 - Imágenes en otro directorio:
 
 <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
--------------------------------------------------------------------------------------------------------------------------------------------------
+_________________________________________________________________________________________________________________________________________________
 
 #Nota: "float:right;" Hace flotar un elemento.
 
-#Nota: En este caso como el elemento de imagen esta dentro del elemento "<p>" y del elemento <strong> la imagen se situará al lado de estos.
+#Nota: En este caso como la etiqueta de imagen esta dentro la etiqueta de "<p>" y de la etiqueta <strong> la imagen se situará al lado de estos.
 
 - Imagen flotante: 
 
@@ -164,24 +169,149 @@ The image will float to the right of the text.</p>
 
 <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
 The image will float to the left of the text.</p>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento raíz:
+- Mapas de imágenes:
+
+#Nota: Es una imagen  en la que se puede hacer clic.
+
+#Nota: "shape="rect"" define una región rectangular,
+       "shape="circule"" define una región circular,
+       "shape="poly"" define una región poligonal,
+       "shape="default"" define toda la región de la imagen.
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+_________________________________________________________________________________________________________________________________________________
+
+#Nota: url('img_girl.jpg');" Ruta de la imagen.
+
+- Imagen de fondo:
+
+<p style="background-image: url('img_girl.jpg');">
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+<style>
+p {
+  background-image: url('img_girl.jpg');
+}
+</style>
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "background-repeat: no-repeat" Repetición de la imagen, en este coso no se repite.
+
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+_________________________________________________________________________________________________________________________________________________
+
+#Nota: "background-attachment: fixed;" Asegura que todo el elemento esté cubierto por la imagen.
+#Nota: "background-size: cover;" Cubre todo el elemento con la imagen.
+
+- Imagen como portada: 
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+_________________________________________________________________________________________________________________________________________________
+
+#Nota: "background-size: 100% 100%;" da dimensiones a la imagen de fondo, tanto como el eje "x" y el eje "y".
+
+- Estiramiento de imagen de fondo: 
+
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+_________________________________________________________________________________________________________________________________________________
+
+- Elemento imagen (picture):
+
+#Nota: "<picture>" Define varias imágenes con las cuales el navegador puede elegir cual es la que se adapta mejor al dispositivo que está ingresando
+                   a la página web .
+#Nota: El atributo "media="(min-width: 650px)"" define cuando la imagen es la indicada dependiendo del caso.
+#Nota: Con la etiqueta "<picture>" se utiliza para cuidar el ancho de banda, ya que cargará solo la imagen que mejor de adapte al dispositivo,
+        de forma de que este ignorará las demás imágenes. De igual forma sirve para cuidar los recursos de los navegadores que no cuentan 
+        con el soporte de ciertas extensiones de las imágenes.
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+_________________________________________________________________________________________________________________________________________________
+
+- Imagen favicon (imagen que se muestra en el titulo de la página):
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+_________________________________________________________________________________________________________________________________________________
+
+- Imagen responsiva:
+
+<img src="img_girl.jpg" style="width:100%;">
+
+<img src="img_girl.jpg" style="max-width:100%;height:auto;">
+_________________________________________________________________________________________________________________________________________________
+
+- Tamaño de texto adaptable:
+
+<h1 style="font-size:10vw">Hello World</h1>
+_________________________________________________________________________________________________________________________________________________
+- Etiqueta raíz:
 
 <html>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento body:
+- Etiqueta body:
 
 <body> </body>
 
-#Nota: El contenido dentro del elemento "<body>" es lo que ve el usuario en la página web. 
+#Nota: El contenido dentro de la etiqueta "<body>" es lo que ve el usuario en la página web. 
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento style:
+- Etiqueta style:
 
 #Nota: "color:red;" Color de letra,
 
 <p style="color:red;">This is a red paragraph.</p>
 
-#Nota: El elemento "<style>" agrega estilos a un elemento.
+#Nota: La etiqueta "<style>" agrega estilos a un elemento.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "background-color:powderblue;" Color de fondo.
@@ -233,27 +363,47 @@ The image will float to the left of the text.</p>
 #Nota: "text-align:center;" Alineación del texto. 
 
 <h1 style="text-align:center;">Centered Heading</h1>
+_________________________________________________________________________________________________________________________________________________
 
+- Etiqueta title:
 
-- Elemento title:
+#Nota: la etiqueta "<title>" da titulo a la página web.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tutorial</title>
+</head>
+<body>
+
+The content of the document......
+
+</body>
+</html>
+_________________________________________________________________________________________________________________________________________________
+
+- Atributo title:
 
 <p title="I'm a tooltip">This is a paragraph.</p>
 
 #Nota: El atributo "<title>" define información adicional sobre el elemento.
 
 #Nota>: Da información sobre el elemento al pasar el mouse sobre el.
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento Reglas horizontales:
+- Etiquetas de Reglas horizontales:
 
 <hr>
 
 #Notas: Dibuja una linea horizontal.
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento de salto de linea: 
+- Etiqueta de salto de linea: 
 
 <br>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento pre:
+- Etiqueta pre:
 
 <pre>
   My Bonnie lies over the ocean.
@@ -265,48 +415,58 @@ The image will float to the left of the text.</p>
   Oh, bring back my Bonnie to me.
 </pre>
 
-#Nota: El elemento "<pre>" define un texto preformateados conservando las espacios
+#Nota: La etiqueta "<pre>" define un texto preformateados conservando las espacios
 como los saltos de lineas.
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto en negrita:
+- Etiqueta texto en negrita:
 
 <b>This text is bold</b>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto con gran importancia:
+- Etiqueta texto con gran importancia:
 
 <strong>This text is important!</strong>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto en cursiva:
+- Etiqueta texto en cursiva:
 
 <i>This text is italic</i>
 
 #Nota: Se utiliza para indicar términos técnicos.
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto enfatizado: 
+- Etiqueta texto enfatizado: 
 
 <em>This text is emphasized</em>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto pequeño: 
+- Etiqueta texto pequeño: 
 
 <small>This is some smaller text.</small>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto eliminado o tachado: 
+- Etiqueta texto eliminado o tachado: 
 
 <p>My favorite color is <del>blue</del> red.</p>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto insertado: 
+- Etiqueta texto insertado: 
 
 <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto subíndice:
+- Etiqueta texto subíndice:
 
 <p>This is <sub>subscripted</sub> text.</p>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento texto superíndice:
+- Etiqueta texto superíndice:
 
 <p>This is <sup>superscripted</sup> text.</p>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento para citas:
+- Etiqueta para citas:
 
 <p>Here is a quote from WWF's website:</p>
 <blockquote cite="http://www.worldwildlife.org/who/index.html">
@@ -314,16 +474,19 @@ For 60 years, WWF has worked to help people and nature thrive. As the world's le
 </blockquote>
 
 #Nota: Define una sección de una cita de otra fuente. 
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento citas cortas con comillas:
+- Etiqueta citas cortas con comillas:
 
 <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento abreviaturas: 
+- Etiqueta abreviaturas: 
 
 <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento dirección:
+- Etiqueta dirección:
 
 <address>
 Written by John Doe.<br>
@@ -334,18 +497,21 @@ USA
 </address>
 
 #Nota: Para información de contacto.
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento titulo de trabajo: 
+- Etiqueta titulo de trabajo: 
 
 <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 
 #Nota: Define el titulo de un trabajo, obra, libro entre otros. 
+_________________________________________________________________________________________________________________________________________________
 
-- Elemento anulación bidireccional de texto:
+- Etiqueta anulación bidireccional de texto:
 
 <bdo dir="rtl">This text will be written from right to left</bdo>
 
 #Nota: coloca al revés el texto.
+_________________________________________________________________________________________________________________________________________________
 
 - Comentarios: 
 
@@ -367,6 +533,7 @@ USA
 <p>This is a paragraph too.</p>
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 <p>This <!-- great text --> is a paragraph.</p>
+_________________________________________________________________________________________________________________________________________________
 
 - CSS interno (dentro de HTML):
 
@@ -388,6 +555,7 @@ h1   {color: blue;}
 #Nota: Se pueden definir elementos de CSS dentro de HTML con el elemento <style>.
 
 #Nota: El CSS interno se define dentro del elemento "<head>".
+_________________________________________________________________________________________________________________________________________________
 
 - CSS externo:
 
@@ -461,3 +629,1084 @@ p {
 <h2 id="C4">Chapter 4</h2>
 
 <a href="#C4">Jump to Chapter 4</a>
+_________________________________________________________________________________________________________________________________________________
+#Nota: "<tr>" Fila de tabla,
+       "<th>" Encabezados de tabla,
+       "<td>" Celdas de tabla.
+
+- Tablas:
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+_________________________________________________________________________________________________________________________________________________
+
+- Bordes de tabla: 
+
+table, th, td {
+  border: 1px solid black;
+}
+_________________________________________________________________________________________________________________________________________________
+
+- Bordes de tablas colapsados:
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+_________________________________________________________________________________________________________________________________________________
+
+- Estilo de bordes de tabla:
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+_________________________________________________________________________________________________________________________________________________
+
+- Radio de bordes de tabla:
+
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+_________________________________________________________________________________________________________________________________________________
+
+#Nota: "dotted",
+       "dashed",
+       "solid",
+       "double",
+       "groove",
+       "ridge",
+       "outset",
+       "none",
+       "hidden".
+
+- Bordes punteados de tabla: 
+
+ th, td {
+  border-style: dotted;
+}
+________________________________________________________________________________________________________________________________________________
+
+-Color de borde:
+
+th, td {
+  border-color: #96D4D4;
+}
+________________________________________________________________________________________________________________________________________________
+
+- Ancho de tabla:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+________________________________________________________________________________________________________________________________________________
+
+- Ancho de columna: 
+
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+________________________________________________________________________________________________________________________________________________
+
+- Altura de la fila de la tabla:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: "colspan="2"" define la cantidad de celdas para una columna.
+
+- Encabezados para varias columnas de tabla:
+
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: La etiqueta de tabla "<caption>" dan un titilo a la tabla.
+
+- Titulo de tabla:
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+________________________________________________________________________________________________________________________________________________
+
+- Relleno de celdas:
+
+th, td {
+  padding: 15px;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Nota: "padding-top" padding superior,
+       "padding-bottom" padding inferior,
+       "padding-left" padding izquierdo,
+       "padding-right" padding derecho.
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+________________________________________________________________________________________________________________________________________________
+
+- Espacio entre celdas:
+
+table {
+  border-spacing: 30px;
+}
+________________________________________________________________________________________________________________________________________________
+
+#Nota: "rowspan="2"" define la cantidad de celdas para una fila.
+
+- Varias celdas en una fila: 
+
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+</tr>
+</table>
+________________________________________________________________________________________________________________________________________________
+
+- Rayas horizontales de cebra en una tabla: 
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+________________________________________________________________________________________________________________________________________________
+
+- Rayas verticales de cebra en una tabla:
+
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+________________________________________________________________________________________________________________________________________________
+
+- Rayas verticales y horizontales de cebra en una tabla:
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+________________________________________________________________________________________________________________________________________________
+
+- Divisores horizontales de tabla: 
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+________________________________________________________________________________________________________________________________________________
+
+#Nota: se resaltara una celda de la tabla al parar el mouse por encima.
+
+- Resaltado de celdas de tabla: 
+
+tr:hover {background-color: #D6EEEE;}
+________________________________________________________________________________________________________________________________________________
+
+#Nota: "col span="2"" define las columnas que van a ser afectadas por un cambio o estilo.
+
+- Grupo de columnas: 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Colgroup</h2>
+<p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+
+<table style="width: 100%;">
+<colgroup>
+  <col span="2" style="background-color: #D6EEEE">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+</body>
+</html>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: <col span="2" style="background-color: #D6EEEE">, <col span="3" style="background-color: pink"> define estilos distintos en las columnas.
+
+- Columnas con diferentes estilos:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Multiple Col Elements</h2>
+<p>Add multiple col elements in the colgroup:</p>
+
+<table style="width: 100%;">
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+    <col span="3" style="background-color: pink">
+  </colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+</body>
+</html>
+________________________________________________________________________________________________________________________________________________
+
+#Nota:  "<col span="3">" define columnas vacías.
+
+- Grupo de columnas vacías:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Empty Colgroups</h2>
+<p>Add "empty" col elements that represents the columns before the columns you want to style:</p>
+
+<table style="width: 100%;">
+<colgroup>
+  <col span="3">
+  <col span="2" style="background-color: pink">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+</body>
+</html>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: "col span="3" style="visibility: collapse" oculta columnas.
+- Ocultar columnas: 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Hide Columns</h2>
+<p>You can hide specific columns with the visibility property:</p>
+
+<table style="width: 100%;">
+<colgroup>
+    <col span="2">
+    <col span="3" style="visibility: collapse">
+  </colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+<p><b>Note:</b> The table columns does not collapse properly in Safari browsers.</p>
+</body>
+</html>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: "<li>" Elemento de item de listo.
+
+- Lista desordenada: 
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: "<li>" Elemento de item de listo.
+
+- Lista ordenada: 
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+________________________________________________________________________________________________________________________________________________
+
+#Notas: "<dt>" Etiqueta para nombres o términos de lista. 
+#Notas: "<dd>" Etiqueta para describir los nombres o términos de listas.
+
+- Listas con descripciones:
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+________________________________________________________________________________________________________________________________________________
+
+#Notas: "style="list-style-type:disc;""  Estilo de lista. 
+#Notas: "disc" Disco,
+        "circule" Circulo,
+         "square" Cuadrado,
+         "none" Ninguno.
+
+- Estilo de listas: 
+
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Estilo de lista con números:
+
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Estilo de lista con letras mayúsculas: 
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Estilo de lista con letras minúsculas:
+
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Estilo de lista con números romanos en mayúsculas:
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Estilo de lista con números romanos en minúsculas:
+
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Estilo de lista de conteo: 
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+________________________________________________________________________________________________________________________________________________
+
+- Lista anidadas: 
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+________________________________________________________________________________________________________________________________________________
+
+- Lista horizontal con CSS (Nvar): 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: Una etiqueta de linea no inicia en una linea nueva como los párrafos.
+#Nota: La etiqueta de linea ocupa el ancho necesario. 
+
+- Etiqueta de linea:
+
+<span>Hello World</span>
+________________________________________________________________________________________________________________________________________________
+
+- Etiqueta de contenedor: 
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+________________________________________________________________________________________________________________________________________________
+
+- Atributo clase:
+
+#Nota: El atributo clase se utiliza a menudo para señalar el nombre de una clase en una hoja de estilo. 
+       También puede ser utilizado por JavaScript para acceder y manipular elementos con el nombre de clase específico.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Múltiples clases:
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Distintos elementos con ka misma clase: 
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France</p>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Atributo clase con javascript: 
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: Identificador único para una etiqueta.
+
+- Atributo id:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: LLamar un identificador de un elemento en un link.
+
+- Marcadores con atributo id y etiqueta de link:
+
+<a href="#C4">Jump to Chapter 4</a>
+________________________________________________________________________________________________________________________________________________
+
+- Atributo id con JavaScript:
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+________________________________________________________________________________________________________________________________________________
+#Nota: Insertar un documento dentro del documento HTML actual.
+
+- Etiqueta de marcos flotantes: 
+
+<iframe src="url" title="description"></iframe>
+------------------------------------------------------------------------------------------------------------------------------------------------
+- Etiqueta de marcos flotantes com medidas:
+
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Etiqueta de marcos flotantes com medidas:
+
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- iframe sin marcos 
+
+<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- iframe con estilo:
+
+<iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- iframe de otra página web: 
+
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: "<noscript>" Define un contenido alternativo para navegadores que no admiten scripts o para usuarios que los tienen deshabilitados.
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+________________________________________________________________________________________________________________________________________________
+
+- Etiqueta meta:
+
+#Nota "<meta>" Se utiliza para especificar juegos de caracteres, descripción de la página en la palabras claves, el autor del documento y
+      la configuración de la ventana gráfica.
+
+#juego de caracteres
+
+<meta charset="UTF-8">
+
+#palabras clave para motores de búsqueda
+
+<meta name="keywords" content="HTML, CSS, JavaScript">
+
+#Descripción de la página web 
+
+<meta name="description" content="Free Web tutorials">
+
+#Autor de la página web 
+
+<meta name="author" content="John Doe">
+
+#Actualización automática (30 seg)
+
+<meta http-equiv="refresh" content="30">
+
+#Configuración de la ventana gráfica para todos los dispositivos
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+-----------------------------------------------------------------------------------------------------------------------------------------------
+<meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="John Doe">
+________________________________________________________________________________________________________________________________________________
+#Nota: Para especificar una URL predeterminada y un destino predeterminado para todos los enlaces de una página.
+#Nota: Puede haber solo una etiqueta "<base>".
+
+- Etiqueta base: 
+
+<head>
+<base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+<body>
+<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+<a href="tags/tag_base.asp">HTML base Tag</a>
+</body>
+________________________________________________________________________________________________________________________________________________
+
+- Estrada de atajos por teclado:
+
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+________________________________________________________________________________________________________________________________________________
+
+- Muestra de salida de un programa de computadora:
+
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+Resultado: 
+
+Message from my computer:
+File not found.
+Press F1 to continue
+________________________________________________________________________________________________________________________________________________
+#Nota: Define un fragmento de código informático mostrándola con una fuente monoespaciada predeterminada del navegador
+
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code>
+
+Resultado:
+
+x = 5; y = 6; z = x + y;
+________________________________________________________________________________________________________________________________________________
+
+- Variables:
+
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+Resultado:
+
+The area of a triangle is: 1/2 x b x h, where b is the base, and h is the vertical height.
+________________________________________________________________________________________________________________________________________________
+#Nota: Define secciones en la página web para separar temas. 
+#Nota: Se utiliza en: Capítulos,
+                      Introducción,
+                      Noticias,
+                      Información del contacto.
+
+- Etiqueta sección:
+
+<section>
+<h1>WWF</h1>
+<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, 
+research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+<h1>WWF's Panda symbol</h1>
+<p>The Panda has become the symbol of WWF. 
+The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo
+to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: Se utiliza en: Publicaciones del foro,
+                      Publicaciones de blog,
+                      Comentarios del usuario,
+                      Tarjetas de producto,
+                      Artículos del periódico.
+
+- Etiqueta de articulo:
+
+<article>
+<h2>Google Chrome</h2>
+<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+<h2>Mozilla Firefox</h2>
+<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+<article>
+<h2>Microsoft Edge</h2>
+<p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+________________________________________________________________________________________________________________________________________________
+
+#Nota: Normalmente se utiliza : uno o más elementos de encabezado (<h1> - <h6>),
+                                logotipo o icono,
+                                información de autoría.
+- Etiqueta de encabezado:
+
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment,
+  and build a future in which humans live in harmony with nature.</p>
+</article>
+________________________________________________________________________________________________________________________________________________
+
+- Pié de página: 
+
+#Nota: Normalmente se utiliza en: información de autoría,
+                                  información registrada,
+                                  Información del contacto,
+                                  mapa del sitio,
+                                  volver a los enlaces superiores,
+                                  documentos relacionados.
+
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
