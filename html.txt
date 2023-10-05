@@ -1710,3 +1710,105 @@ ________________________________________________________________________________
   <p>Author: Hege Refsnes</p>
   <p><a href="mailto:hege@example.com">hege@example.com</a></p>
 </footer>
+________________________________________________________________________________________________________________________________________________
+
+- Barra de navegación:
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+________________________________________________________________________________________________________________________________________________
+#Nota: Define contenido que se está añadiendo al contenido existente en la página (como una barra lateral).
+
+- Contenido aparte:
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and 
+seasonal special events.</p>
+</aside>
+________________________________________________________________________________________________________________________________________________
+
+- Elemento <figure> y <figcaption>:
+
+#Nota: "<figure>" Especifica contenido autónomo como: Ilustraciones, diagramas, fotografías, listado de código entre otros.
+                  (es como un pie de página para imágenes ).
+#Nota: "<figcaption>" Define un titulo para la etiqueta "<figure>", se puede colocar como el primero o el último hijo de la etiqueta "<figure>". 
+
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli">
+  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+</figure>
+________________________________________________________________________________________________________________________________________________
+
+- Juego de caracteres: 
+
+#UTF-8
+<meta charset="UTF-8">
+
+#ANSI
+<meta charset="Windows-1252">
+
+#ISO-8859-1
+<meta charset="ISO-8859-1">
+________________________________________________________________________________________________________________________________________________
+
+- Formularios:
+
+<form>
+.
+form elements
+.
+</form>
+________________________________________________________________________________________________________________________________________________
+#Nota: <input type="text"> De texto,
+       <input type="radio"> De selección (1>),
+       <input type="checkbox"> Casilla de verificación (0 >=),
+       <input type="submit"> Botón de envio de formularia ,
+       <input type="button"> muestras un botón en el que se pueda hacer clic.
+#Nota: el atributo "for" de la etiqueta "<label>" tiene que ser el mismo del "id" del de la etiqueta "<input>" para unirlos
+
+- Entrada de datos por teclado:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+________________________________________________________________________________________________________________________________________________
+#Nota: El atributo "acción" define la acción que va a realizar al enviar el formulario.
+
+- Atributo de acción:
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+________________________________________________________________________________________________________________________________________________
+#Nota: Define donde mostrar la respuesta que se recibe después de enviar el formulario.
+#Nota: "_blank" En una nueva página o pestaña,	
+       "_self"	En la ventana actual,
+       "_parent"	En el marco principal,
+       "_top"	En todo el cuerpo de pa página,
+       "framename" En marco flotante con nombre.
+
+- El atributo objetivo:
+
+<form action="/action_page.php" target="_blank">
+________________________________________________________________________________________________________________________________________________
+#Nota: Especifica el método de HTTP que se va a utilizar para enviar datos de un Formulario.
+
+<form action="/action_page.php" method="get">
+
+<form action="/action_page.php" method="post">
+
+
