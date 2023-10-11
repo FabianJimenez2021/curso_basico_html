@@ -10,12 +10,12 @@
 <h4>This is heading 4</h4>
 <h5>This is heading 5</h5>
 <h6>This is heading 6</h6>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 -Etiqueta Párrafos:
 
 <p>This is a paragraph.</p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 -Etiqueta Links:
 
@@ -32,7 +32,7 @@ ________________________________________________________________________________
        "_top" (en el cuerpo completo de la ventana)
 
 <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - URLS absolutas y relativas: 
 
@@ -43,24 +43,24 @@ ________________________________________________________________________________
 <h2>Relative URLs</h2>
 <p><a href="html_images.asp">HTML Images</a></p>
 <p><a href="/css/default.asp">CSS Tutorial</a></p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Dirección correo electrónico: 
 
 <a href="mailto:someone@example.com">Send email</a>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Botón como enlace:
 
 <button onclick="document.location='default.asp'">HTML Tutorial</button>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Títulos en enlaces: 
 
 #Nota: Se muestra al pasar el mouse por encima del elemento.
 
 <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Colores de enlaces: 
 
@@ -111,7 +111,7 @@ a:hover, a:active {
   background-color: red;
 }
 </style>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Imágenes:
 
@@ -122,7 +122,7 @@ ________________________________________________________________________________
        Ojo: Cuando se le quiera dar unas dimensiones a una imagen desde html no se colocan las unidades de medida.
 
 <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Imagen con la etiqueta estilo:
 
@@ -143,7 +143,7 @@ img {
 
 </body>
 </html>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Imagen como enlace:
 
@@ -151,12 +151,12 @@ ________________________________________________________________________________
 <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
 </a>
 
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Imágenes en otro directorio:
 
 <img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 #Nota: "float:right;" Hace flotar un elemento.
 
@@ -169,7 +169,7 @@ The image will float to the right of the text.</p>
 
 <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
 The image will float to the left of the text.</p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Mapas de imágenes:
 
@@ -187,21 +187,21 @@ ________________________________________________________________________________
   <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
   <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
 </map>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 #Nota: url('img_girl.jpg');" Ruta de la imagen.
 
 - Imagen de fondo:
 
 <p style="background-image: url('img_girl.jpg');">
--------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 <style>
 p {
   background-image: url('img_girl.jpg');
 }
 </style>
--------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "background-repeat: no-repeat" Repetición de la imagen, en este coso no se repite.
 
@@ -211,7 +211,7 @@ body {
   background-repeat: no-repeat;
 }
 </style>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 #Nota: "background-attachment: fixed;" Asegura que todo el elemento esté cubierto por la imagen.
 #Nota: "background-size: cover;" Cubre todo el elemento con la imagen.
@@ -226,7 +226,7 @@ body {
   background-size: cover;
 }
 </style>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 #Nota: "background-size: 100% 100%;" da dimensiones a la imagen de fondo, tanto como el eje "x" y el eje "y".
 
@@ -240,7 +240,7 @@ body {
   background-size: 100% 100%;
 }
 </style>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Elemento imagen (picture):
 
@@ -256,14 +256,14 @@ ________________________________________________________________________________
   <source media="(min-width: 465px)" srcset="img_car.jpg">
   <img src="img_girl.jpg">
 </picture>
--------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 <picture>
   <source srcset="img_avatar.png">
   <source srcset="img_girl.jpg">
   <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
 </picture>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Imagen favicon (imagen que se muestra en el titulo de la página):
 
@@ -280,30 +280,30 @@ ________________________________________________________________________________
 
 </body>
 </html>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Imagen responsiva:
 
 <img src="img_girl.jpg" style="width:100%;">
 
 <img src="img_girl.jpg" style="max-width:100%;height:auto;">
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Tamaño de texto adaptable:
 
 <h1 style="font-size:10vw">Hello World</h1>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 - Etiqueta raíz:
 
 <html>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta body:
 
 <body> </body>
 
 #Nota: El contenido dentro de la etiqueta "<body>" es lo que ve el usuario en la página web. 
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta style:
 
@@ -312,7 +312,7 @@ ________________________________________________________________________________
 <p style="color:red;">This is a red paragraph.</p>
 
 #Nota: La etiqueta "<style>" agrega estilos a un elemento.
------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "background-color:powderblue;" Color de fondo.
 
@@ -321,12 +321,12 @@ ________________________________________________________________________________
 <h1 style="background-color:powderblue;">This is a heading</h1>
 
 </body>
----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: Color de letra.
 
 <h1 style="color:blue;">This is a heading</h1>
----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "border:2px solid Tomato;" Bode que rodea a un elemento,
        "px" unidad de medida (pixel),
@@ -334,7 +334,7 @@ ________________________________________________________________________________
        "Tomato" Color de bode.
 
 <h1 style="border:2px solid Tomato;">Hello World</h1>
----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "background-color:rgb(255, 99, 71);" Colores con escala rgb.
 
@@ -348,22 +348,22 @@ ________________________________________________________________________________
 
 <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
 <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "font-family:verdana;" Tipo de letra.
 
 <h1 style="font-family:verdana;">This is a heading</h1>
----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "font-size:300%;" Tamaño de letra.
 
 <h1 style="font-size:300%;">This is a heading</h1>
----------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 #Nota: "text-align:center;" Alineación del texto. 
 
 <h1 style="text-align:center;">Centered Heading</h1>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta title:
 
@@ -380,7 +380,7 @@ The content of the document......
 
 </body>
 </html>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Atributo title:
 
@@ -389,19 +389,19 @@ ________________________________________________________________________________
 #Nota: El atributo "<title>" define información adicional sobre el elemento.
 
 #Nota>: Da información sobre el elemento al pasar el mouse sobre el.
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiquetas de Reglas horizontales:
 
 <hr>
 
 #Notas: Dibuja una linea horizontal.
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta de salto de linea: 
 
 <br>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta pre:
 
@@ -417,54 +417,54 @@ ________________________________________________________________________________
 
 #Nota: La etiqueta "<pre>" define un texto preformateados conservando las espacios
 como los saltos de lineas.
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto en negrita:
 
 <b>This text is bold</b>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto con gran importancia:
 
 <strong>This text is important!</strong>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto en cursiva:
 
 <i>This text is italic</i>
 
 #Nota: Se utiliza para indicar términos técnicos.
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto enfatizado: 
 
 <em>This text is emphasized</em>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto pequeño: 
 
 <small>This is some smaller text.</small>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto eliminado o tachado: 
 
 <p>My favorite color is <del>blue</del> red.</p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto insertado: 
 
 <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto subíndice:
 
 <p>This is <sub>subscripted</sub> text.</p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta texto superíndice:
 
 <p>This is <sup>superscripted</sup> text.</p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta para citas:
 
@@ -474,17 +474,17 @@ For 60 years, WWF has worked to help people and nature thrive. As the world's le
 </blockquote>
 
 #Nota: Define una sección de una cita de otra fuente. 
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta citas cortas con comillas:
 
 <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta abreviaturas: 
 
 <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta dirección:
 
@@ -497,21 +497,21 @@ USA
 </address>
 
 #Nota: Para información de contacto.
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta titulo de trabajo: 
 
 <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 
 #Nota: Define el titulo de un trabajo, obra, libro entre otros. 
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Etiqueta anulación bidireccional de texto:
 
 <bdo dir="rtl">This text will be written from right to left</bdo>
 
 #Nota: coloca al revés el texto.
-_________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________
 
 - Comentarios: 
 
@@ -520,7 +520,7 @@ ________________________________________________________________________________
 <p>This is a paragraph.</p>
 
 <!-- Remember to add more information here -->
---------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 
 <!-- <p>This is another paragraph </p> -->
 
@@ -1784,7 +1784,7 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________________
 #Nota: El atributo "acción" define la acción que va a realizar al enviar el formulario.
 
-- Atributo de acción:
+- Atributo de acción de campos de entradas de datos:
 
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
@@ -1801,7 +1801,7 @@ ________________________________________________________________________________
        "_top"	En todo el cuerpo de pa página,
        "framename" En marco flotante con nombre.
 
-- El atributo objetivo:
+- El atributo objetivo de campos de datos por teclado:
 
 <form action="/action_page.php" target="_blank">
 ________________________________________________________________________________________________________________________________________________
@@ -1810,5 +1810,294 @@ ________________________________________________________________________________
 <form action="/action_page.php" method="get">
 
 <form action="/action_page.php" method="post">
+________________________________________________________________________________________________________________________________________________
 
+- Atributo de valor de campos de datos por teclado:
 
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+#Nota: Le da un valor predeterminado dentro del campo de entrada de datos por teclado.
+#Nota: El contenido puede ser modificado por el usuario. 
+________________________________________________________________________________________________________________________________________________
+
+- Atributo de solo lectura de campos de datos por teclado:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+#Nota: Un campo de solo lectura no se puede modificar (sin embargo, un usuario puede, resaltar y copiar el texto).
+#Nota: El campo de solo lectura se envía al servidor junto con todo el formulario. 
+________________________________________________________________________________________________________________________________________________
+
+- Atributo deshabilitado de campos de datos por teclado:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+#Nota: Especifica que un campo de entrada de datos esté deshabilitado.
+#Nota: Un campo deshabilitado no se puede utilizar ni se puede hacer clic en el. 
+#Nota: Este campo no se envía junto al formulario al servidor. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo de tamaño de campos de datos por teclado:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4">
+</form>
+
+#Nota: Especifica el ancho visible de caracteres de un campo de datos por teclado. 
+#Nota: El valor predeterminado es de un ancho de 20. 
+#Nota: Este atributo funciona con campos de entrada de datos: texto, búsqueda, teléfono, url, correo electrónico y contraseña.   
+__________________________________________________________________________________________________________________________________
+
+- Atributo de longitud maxima:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4">
+</form>
+__________________________________________________________________________________________________________________________________
+
+- Atributos mínimo y máximo:
+
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+__________________________________________________________________________________________________________________________________
+
+- Atributo múltiple:
+
+<form>
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple>
+</form>
+
+#Nota: Especifica al usuario que puede ingresar mas de un tipo de un valor en un campo de entrada de datos por teclado. 
+#Nota: Funciona con los siguientes tipos de campo de entrada de datos por teclado: correo electrónico y archivo. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo del patrón:
+
+<form>
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code"
+  pattern="[A-Za-z]{3}" title="Three letter country code">
+</form>
+
+#Nota: Especifica un expresión regular con la que se compara el valor del campo de entrada cuando se envía el formulario. 
+#Nota: Funciona con los siguientes campos de entrada de datos por teclado: texto, fecha, url, búsqueda, teléfono, correo electrónico y contraseña. 
+#Nota: Utilizar el atributo de titulo para dar una descripción al patrón y el usuario pueda entender. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo de marcador de posición:
+
+<form>
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+</form>
+
+#Nota: Especifica una breve sugerencia que describe el valor esperado de un campo de entrada de datos de teclado.
+#Nota: La sugerencia se muestra en el campo de entrada de datos de teclado antes de que el usuario ingrese un valor.
+#Nota: Funciona en los siguientes campos de datos por teclado: texto, búsqueda, url, teléfono, correo electrónico y contraseña. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo requerido:
+
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+</form>
+
+#Nota: Indica que un un campo de datos por teclado debe ser completado para enviar el formulario. 
+#Nota: Funciona en los siguientes campos de datos por teclado: texto, búsqueda, url, teléfono, correo electrónico, 
+selectores de fecha, número, casilla de verificación, radio y archivo. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo de paso: 
+
+<form>
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3">
+</form>
+
+#Nota: Especifica los intervalos de números legales para el campo de datos por teclado. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo de enfoque automático:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+#Nota: Especifica que un campo de entrada de datos que debe recibir atención automáticamente al cargar la página. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo de alto y ancho:
+
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+__________________________________________________________________________________________________________________________________
+
+- Atributo de lista: 
+
+<form>
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+__________________________________________________________________________________________________________________________________
+
+- Atributo de auto completar: 
+
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" autocomplete="off"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+#Nota: El navegador puede predecir el valor para completar un campo de datos.
+__________________________________________________________________________________________________________________________________
+
+- Atributo formulario: 
+
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+
+#Nota: Un campo que pertenece a un formulario, pero está fuera de este. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo de formación:
+form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+</form>
+
+#Nota: Especifica la url del archivo que procesará la entrada de datos cuando se envíe el formulario. 
+#Nota: Este atributo anula el atributo "acción".
+#Nota: Solo funciona en os siguientes campos de entrada de datos: Enviar e imagen.  
+__________________________________________________________________________________________________________________________________
+
+- Atributo tipo formenc:
+
+<form action="/action_page_binary.asp" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
+
+#Nota: Especifica como se debe codificarse los datos del formulario cuando se envían (solo con el método "POST").
+#Nota: Este atributo anula el atributo "enctype".
+#Nota: Funciona con los siguientes campos de datos: enviar e imagen. 
+__________________________________________________________________________________________________________________________________
+
+- Atributo formmethod:
+
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit using GET">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+
+#Nota: Funciona como un atributo "method" pero en vez de tomar un elemento completo en la página web , puede utilizarse
+para que las etiquetas puedan cumplir tareas individuales al enviar un formulario.  
+__________________________________________________________________________________________________________________________________
+
+- Atributo formtarget:
+
+#Nota: Especifica un nombre o palabra clave que indica donde mostrar la respuesta que se recibe al enviar el formulario.
+#Nota: Este atributo anula al atributo "target".
+#Nota: Funciona con los siguientes campos de datos: enviar e imagen. 
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+</form>
+__________________________________________________________________________________________________________________________________
+
+- Atributo formnovalidate: 
+
+#Nota: Especifica que no se valide una etiqueta "<input>" al momento de enviar el formulario. 
+#Nota: Este atributo anula el atributo novalidate.
+#Nota: Solo funciona con el campo de datos enviar.
+
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate"
+  value="Submit without validation">
+</form>
+__________________________________________________________________________________________________________________________________
+
+- Atributo novalidate:
+
+#Nota: Especifica que no se valide un formulario al momento de enviarlo. 
+
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Submit">
+</form>
